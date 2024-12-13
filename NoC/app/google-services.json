@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "132235386537",
+    "project_id": "ultimoproyecto-b5a52",
+    "storage_bucket": "ultimoproyecto-b5a52.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132235386537:android:cbf20cb74fa34719e413b8",
+        "android_client_info": {
+          "package_name": "com.efirebase.noc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmxdJZbaUTwS4yrGFdsI38p_EQ8YiURyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

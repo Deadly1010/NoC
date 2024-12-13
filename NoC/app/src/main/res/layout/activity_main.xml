@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- nombre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Mono: "
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el nombre"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="20sp"
+        />
+
+    <!-- Edad -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese la edad del mono:"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/et_edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la edad"
+        android:inputType="number"
+        android:layout_marginBottom="20sp"
+        />
+
+    <!-- Raza -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la raza:"
+        android:textSize="20sp"
+        android:layout_marginBottom="10sp"
+        />
+
+    <Spinner
+        android:id="@+id/spiner_raza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- Mensaje -->
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese un mensaje:"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/et_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Exriba su mensaje..."
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- Enviar -->
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:onClick="enviarDatosFirestore"
+    android:layout_marginTop="5dp"
+        />
+
+    <!-- Cargar -->
+
+    <Button
+        android:id="@+id/btn_cargar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="CargarLista"
+        android:text="Cargar"
+        />
+
+    <!-- Lista monos -->
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
